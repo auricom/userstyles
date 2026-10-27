@@ -37,7 +37,7 @@
     #lib.palette();
     #lib.defaults();
 
-    // GitHub-inspired neutral surfaces, blue links, and accent highlights.
+    // Raised surfaces distinguish controls and cards from the page background.
     --color-scheme: if(@flavor = latte, light, dark);
     --app-bg: @base;
     --app-frame-bg: @mantle;
@@ -63,9 +63,9 @@
 
     // The public homepage uses a separate set of theme variables.
     --bg-app: @base;
-    --bg-input: @mantle;
-    --bg-modal: @mantle;
-    --bg-tooltip: @surface0;
+    --bg-input: @surface0;
+    --bg-modal: @surface0;
+    --bg-tooltip: @surface1;
     --dark-bg: @crust;
     --overlay: fade(@crust, 60%);
     --accent-purple: @accent;
@@ -118,18 +118,18 @@
     --kagi-highlight: @accent;
     --focus-outline: 3px solid @accent;
 
-    --modal-bg: @mantle;
-    --modal-bg-secondary: @surface0;
-    --input-bg: @base;
-    --color-search-input: @base;
-    --color-search-input-border: @surface1;
+    --modal-bg: @surface0;
+    --modal-bg-secondary: @surface1;
+    --input-bg: @surface0;
+    --color-search-input: @surface0;
+    --color-search-input-border: @surface2;
     --btn-primary-bg: @accent;
     --btn-primary-color: @base;
     --checkbox-bg: @accent;
     --checkbox-check: @base;
     --quick-search-bg: @accent;
     --quick-search-icon: @base;
-    --k-tooltip-bg: @surface0;
+    --k-tooltip-bg: @surface1;
     --k-tooltip-text: @text;
     --bottom-bar-bg: @mantle;
     --not-found-bubble-bg: @surface0;
@@ -165,11 +165,11 @@
     --domain-rank-icon-color-scam-hover: @red;
 
     --inline-header-title: @text;
-    --inline-widget-bg: @mantle;
-    --inline-widget-hover-bg: @surface0;
+    --inline-widget-bg: @surface0;
+    --inline-widget-hover-bg: @surface1;
     --inline-header-border: @surface1;
-    --inline-domain-tag-bg: @surface0;
-    --video-item-bg: @mantle;
+    --inline-domain-tag-bg: @surface1;
+    --video-item-bg: @surface0;
     --widget-progress_bar: @accent;
     --translate-fc_icon: @subtext0;
     --rating-star_background: @surface1;
